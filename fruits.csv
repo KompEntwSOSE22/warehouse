@@ -1,0 +1,11 @@
+NAME,ID,PRICE,WEIGHT,COUNTRY OF ORIGIN,HARVEST SEASON,FRUIT SPECIES,FRUIT COLOR,KCAL,VITAMINS,MINERALS
+Apple,0,0.6,ca. 200g,Germany,Autumn,Pomes,Red,52,Vitamin C,Iron - Potassium
+Banana,1,0.4,ca. 200g,Colombia,All ,Botanical Berries,Yellow,89,Vitamin C,Iron - Potassium
+Orange,2,0.75,ca. 250g,Spain,All ,Hesperidiums,Orange,47,Vitamin A - Vitamin C,Calcium - Iron - Potassium
+Grape,3,1.99,ca. 500g,India,Autumn,Botanical Berries,Green,69,Vitamin C,Calcium - Iron - Potassium
+Raspberry,4,1.99,ca. 125g,Spain,Summer - Autumn,Aggregate fruits,Pink,52,Vitamin C,Calcium - Iron - Potassium
+Blueberry,5,2.19,ca. 200g,Germany,Summer,Botanical berries,Dark Blue,57,Vitamin C,Iron - Potassium
+Strawberry,6,2.99,ca. 250g,Germany,Summer,Aggregate fruits,Red,32,Vitamin C,Calcium - Iron - Potassium
+Mango,7,1.49,ca. 500g,Brasil,Winter,Drupes,Red and Green,65,Vitamin A - Vitamin C,Calcium - Iron - Potassium
+Passionfruit,8,0.69,ca. 90g,Colombia,Summer,Botanical berries,Dark Purple,97,Vitamin A - Vitamin C,Calcium - Iron - Potassium
+Lychee,9,3.99,ca. 500g,China,All ,Drupes,Red,66,Vitamin C,Iron - Potassium
