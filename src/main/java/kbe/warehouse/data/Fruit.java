@@ -1,27 +1,39 @@
-package kbe.warehouse;
+package kbe.warehouse.data;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Fruit {
-    private final String name;
+@Entity
+public class Fruit{
 
-    private final int id;
+    private String name;
 
-    private final double price;
+    @Id
+    @GeneratedValue(strategy =  GenerationType.AUTO)
+    private int id;
 
-    private final String weight;
+    private double price;
 
-    private final String coo;
+    private String weight;
 
-    private final String season;
+    private String coo;
 
-    private final String species;
+    private String season;
 
-    private final String color;
+    private String species;
 
-    private final int kcal;
+    private String color;
 
-    private final String vitamins;
+    private int kcal;
 
-    private final String minerals;
+    private String vitamins;
+
+    private String minerals;
+
+    @ManyToMany(mappedBy = "containedFruits")
+    private List<Basket> inBaskets = new ArrayList<>();
+
+    protected Fruit(){}
 
     public Fruit(String name, int id, double price, String weight, String coo, String season, String species, String color, int kcal, String vitamins, String minerals){
         this.name = name;
@@ -36,12 +48,13 @@ public class Fruit {
         this.vitamins = vitamins;
         this.minerals = minerals;
     }
-    public double getId() {
-        return price;
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
-        return weight;
+        return name;
     }
 
     public double getPrice() {
@@ -78,5 +91,9 @@ public class Fruit {
 
     public String getMinerals() {
         return minerals;
+    }
+
+    public List<Basket> getInBaskets() {
+        return inBaskets;
     }
 }
