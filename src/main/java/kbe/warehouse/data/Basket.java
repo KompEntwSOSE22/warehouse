@@ -37,9 +37,4 @@ public class Basket {
     public List<Fruit> getContainedComponents() {
         return containedFruits;
     }
-
-    // what if fruit == 0
-    public void addComponent(Fruit fruit){
-        containedFruits.add(fruit);
-    }
 }

@@ -53,14 +53,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-		</dependency>
-
-		<!-- Lombook to remove boilerplate -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.24</version>
-			<scope>provided</scope>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
