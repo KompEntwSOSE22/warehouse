@@ -1,4 +1,6 @@
 package kbe.warehouse.data;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +32,8 @@ public class Fruit{
 
     private String minerals;
 
+    // don't want to see the relation
+    @JsonIgnore
     @ManyToMany(mappedBy = "containedFruits")
     private List<Basket> inBaskets = new ArrayList<>();
 

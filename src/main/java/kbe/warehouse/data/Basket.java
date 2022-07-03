@@ -18,6 +18,14 @@ public class Basket {
             inverseJoinColumns =@JoinColumn(name ="fruit_id"))
     private List<Fruit> containedFruits = new ArrayList<>();
 
+    protected Basket(){}
+
+    public Basket(String name, int id, List<Fruit> fruits){
+        this.id = id;
+        this.name = name;
+        this.containedFruits = fruits;
+    }
+
     public int getId() {
         return id;
     }
@@ -28,5 +36,10 @@ public class Basket {
 
     public List<Fruit> getContainedComponents() {
         return containedFruits;
+    }
+
+    // what if fruit == 0
+    public void addComponent(Fruit fruit){
+        containedFruits.add(fruit);
     }
 }

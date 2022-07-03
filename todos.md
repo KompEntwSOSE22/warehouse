@@ -6,14 +6,14 @@
       - Installationsanweisungen
       - Anweisung zur Bedienung
 2. CSV - Importer
-    - Components: 10 Komponenten
-    - Products: id, name, componenten
-3. Endpoints
-    /components
-    /components/id
-    /products
-    /products/id
-4. Swagger + OpenAPI
+    ~~- Components: 10 Komponenten~~ 
+    - Products: id, name, komponenten, amount of komponenten?
+~~3. Endpoints~~
+    ~~/components~~
+    ~~/components/id~~
+    ~~/products~~
+    ~~/products/id~~
+~~4. Swagger + OpenAPI~~
 5. Fehlerbehandlung -> RFC 2616, 10.04
 6. Datenbank Integration
    1. Maven: Treiber + Spring Data

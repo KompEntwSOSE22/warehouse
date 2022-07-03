@@ -5,7 +5,6 @@ import kbe.warehouse.repository.BasketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,8 +21,9 @@ public class BasketController {
         return basketRepo.findAll();
     }
 
+    // TODO what if don't exist?
     @GetMapping("/products/{id}")
-    public Optional<Basket> getProduct(@PathVariable int id){
-        return basketRepo.findById(id);
+    public Basket getProduct(@PathVariable int id){
+        return basketRepo.findById(id).get();
     }
 }
