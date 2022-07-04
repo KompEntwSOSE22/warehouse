@@ -16,7 +16,7 @@
 ~~4. Swagger + OpenAPI~~
 5. Fehlerbehandlung -> RFC 2616, 10.04
 6. Datenbank Integration
-   1. Maven: Treiber + Spring Data
+   ~~1. Maven: Treiber + Spring Data~~
    2. Erstellung Relationale Datenbank 
       1. Heroku
       2. Repository enthält nicht Anmeldeinfo der Datenbank -> Passwort aus Umgebungsvariable löschen
