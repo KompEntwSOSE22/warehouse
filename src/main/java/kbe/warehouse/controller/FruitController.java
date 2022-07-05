@@ -3,6 +3,7 @@ package kbe.warehouse.controller;
 import kbe.warehouse.data.Fruit;
 import kbe.warehouse.repository.FruitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class FruitController {
     /**
      * @return a list of all fruits in JSON
      */
-    @GetMapping("/components")
+    @GetMapping(value= {"/components"}, produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<Fruit> gets(){
         return fruitRepository.findAll();
     }
@@ -28,7 +29,7 @@ public class FruitController {
      * @param id id of fruit
      * @return the specific fruit
      */
-    @GetMapping("/components/{id}")
+    @GetMapping(value={"/components/{id}"}, produces = {MediaType.APPLICATION_JSON_VALUE})
     public Fruit getFruit(@PathVariable int id){
         return fruitRepository.findById(id).get();
     }
