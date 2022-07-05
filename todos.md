@@ -18,11 +18,13 @@
 6. Datenbank Integration
    ~~1. Maven: Treiber + Spring Data~~
    2. Erstellung Relationale Datenbank 
-      1. Heroku
+      ~~1. Heroku~~
       2. Repository enthält nicht Anmeldeinfo der Datenbank -> Passwort aus Umgebungsvariable löschen
-      3. H2 Datenbank -> Dummy-Daten initialisierung
+      3. ~~H2 Datenbank~~ -> Dummy-Daten initialisierung (x)
    3. Schema Validator
 
 ## Test
 -> erfolgreicher CSV imput
 https://www.baeldung.com/spring-data-crud-repository-save
+-> falsche endpoint abrufe
+-> 
